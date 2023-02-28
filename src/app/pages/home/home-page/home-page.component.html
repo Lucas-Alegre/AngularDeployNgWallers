@@ -1,0 +1,22 @@
+<!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+
+<main class="home-container">
+  <h2 class="welcome">
+    Bienvenido, {{ user?.first_name ? user?.first_name : 'Usuario' }}!
+    <!-- <button (click)="test()">Test it!</button> -->
+  </h2>
+
+  <app-balance [money]="money"></app-balance>
+
+  <app-transacciones [transactions]="transactions"></app-transacciones>
+
+  <app-slider></app-slider>
+
+  <app-exchange-rate></app-exchange-rate>
+  <!--
+  <div class="elfsight-app-dbc0537b-83bc-478d-a486-f3b88369cb70"></div>
+  
+  -->
+</main>
+
+<!-- <app-gastos-edit></app-gastos-edit> -->
