@@ -27,6 +27,7 @@
     "@ngrx/effects": "^14.3.3",
     "@ngrx/store": "^14.3.3",
     "@ngrx/store-devtools": "^14.3.3",
+    "angular-cli-ghpages": "^1.0.5",
     "angular-toastify": "^1.0.4",
     "keen-slider": "^6.8.5",
     "rxjs": "~7.5.0",
