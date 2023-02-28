@@ -47,15 +47,6 @@ const routes: Routes = [
     canActivate: [PermissionsGuard],
   },
   {
-    path: 'profile',
-    loadChildren: () =>
-      import('./pages/user-profile/user-profile.module').then(
-        m => m.UserProfileModule
-      ),
-    data: { animation: 'PerfilPage' },
-    canActivate: [PermissionsGuard],
-  },
-  {
     path: 'investments',
     loadChildren: () =>
       import('./pages/investments/investments.module').then(

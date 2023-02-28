@@ -23,10 +23,6 @@ export class SidebarComponent implements OnInit {
       path: 'home',
     },
     {
-      title: 'Perfil',
-      path: 'profile',
-    },
-    {
       title: 'Movimientos',
       path: 'transactions',
     },
