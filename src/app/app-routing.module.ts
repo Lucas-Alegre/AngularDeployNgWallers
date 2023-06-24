@@ -6,12 +6,12 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { ExchangeContainerComponent } from './pages/home/components/exchange-container/exchange-container.component';
 
 const routes: Routes = [
-  /*{
+  {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'home',
     pathMatch: 'full',
     data: { animation: 'BasePage' }
-  },
+  },/*
   {
     path: 'login',
     loadChildren: () =>
