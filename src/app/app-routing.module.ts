@@ -6,7 +6,7 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { ExchangeContainerComponent } from './pages/home/components/exchange-container/exchange-container.component';
 
 const routes: Routes = [
-  {
+  /*{
     path: '',
     redirectTo: 'login',
     pathMatch: 'full',
@@ -18,7 +18,7 @@ const routes: Routes = [
       import('./pages/auth-login/auth-login.module').then(
         m => m.AuthLoginModule
       ),
-    canActivate: [LoginGuard],
+    //canActivate: [LoginGuard],
     data: { animation: 'LoginPage' },
   },
   {
@@ -27,16 +27,16 @@ const routes: Routes = [
       import('./pages/auth-registro/auth-registro.module').then(
         m => m.AuthRegistroModule
       ),
-    canActivate: [LoginGuard],
+    //canActivate: [LoginGuard],
     data: { animation: 'RegisterPage' },
-  },
+  },*/
   {
     path: 'transactions',
     loadChildren: () =>
       import('./pages/transaction/transaction.module').then(
         m => m.TransactionModule
       ),
-    canActivate: [PermissionsGuard],
+   // canActivate: [PermissionsGuard],
     data: { animation: 'MovimientosPage' },
   },
   {
@@ -44,7 +44,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/home/home.module').then(m => m.HomeModule),
     data: { animation: 'HomePage' },
-    canActivate: [PermissionsGuard],
+    //canActivate: [PermissionsGuard],
   },
   {
     path: 'investments',
@@ -53,25 +53,25 @@ const routes: Routes = [
         m => m.InvestmentsModule
       ),
     data: { animation: 'InversionesPage' },
-    canActivate: [PermissionsGuard],
+    //canActivate: [PermissionsGuard],
   },
   {
     path: 'money',
     loadChildren: () =>
       import('./pages/money/money.module').then(m => m.MoneyModule),
-    canActivate: [PermissionsGuard],
+    //canActivate: [PermissionsGuard],
     data: { animation: 'MoneyPage' }
   },
   {
     path: 'contacts',
     component: ContactsComponent,
-    canActivate: [PermissionsGuard],
+    //canActivate: [PermissionsGuard],
     data: { animation: 'ContactosPage' }
   },
   {
     path: 'exchange',
     component: ExchangeContainerComponent,
-    canActivate: [PermissionsGuard],
+    //canActivate: [PermissionsGuard],
     data: { animation: 'DivisasPage' }
   },
   {
